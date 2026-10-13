@@ -94,7 +94,7 @@ Run the predefined production-readiness evaluation separately:
 
 This makes multiple live API calls. It compares the checkpoint 6 agent with the checkpoint 7 direct route, measures cache miss/hit behavior, exercises a complex question, and runs user-input and poisoned-document injection probes. It appends results to `checkpoint_7_1_agent.log` in the working directory. Logs are excluded from Git by default. The interactive interface prints results but does not save a transcript automatically.
 
-See [the reviewer demonstration guide](docs/reviewer_demo.md) for reproducible questions and observed local evidence. Checkpoint 3 contains the question/grading-note evaluation set; checkpoint 4 compares retrieval approaches; checkpoint 5 evaluates the agent; checkpoint 6 explores security and model costs. Probe outputs require review and do not establish comprehensive security.
+See [the reviewer demonstration guide](DEMO_GUIDE.md) for reproducible questions and observed local evidence. Checkpoint 3 contains the question/grading-note evaluation set; checkpoint 4 compares retrieval approaches; checkpoint 5 evaluates the agent; checkpoint 6 explores security and model costs. Probe outputs require review and do not establish comprehensive security.
 
 ## Repository layout
 
@@ -109,7 +109,7 @@ See [the reviewer demonstration guide](docs/reviewer_demo.md) for reproducible q
 | `checkpoint_7/` | Sanitization, routing, caching, context trimming, evaluation demo. |
 | `checkpoint_8/interactive_qa.py` | Interactive entry point. |
 | `ResearchPapers/` | PDF corpus. |
-| `docs/reviewer_demo.md` | Demonstration procedure and evidence. |
+| `DEMO_GUIDE.md` | Demonstration procedure and evidence. |
 
 ## Limitations and troubleshooting
 
