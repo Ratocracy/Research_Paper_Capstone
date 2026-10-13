@@ -1,0 +1,64 @@
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Virtual environments
+.venv/
+.venv-review/
+venv/
+env/
+
+# Packaging and build output
+build/
+dist/
+*.egg-info/
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# IDE and operating-system files
+.idea/
+.vscode/
+*.code-workspace
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+~$*
+
+# Authoritative source documents may have licensing restrictions
+data/raw/**
+!data/raw/**/
+!data/raw/**/.gitkeep
+
+# Generated artifacts are reproducible and should not be committed by default
+data/processed/**
+!data/processed/**/
+!data/processed/**/.gitkeep
+
+# Rebuildable retrieval indexes and extracted paper text
+checkpoint_*/*_chroma/
+checkpoint_*/*_chunks.jsonl
+
+# Course datasets not used by the final Research Paper Navigator
+Wikipedia/
+checkpoint_*/detailedEmails/
+checkpoint_4/annotatedEmails.json
+
+# Completed course worksheets are not runtime dependencies
+checkpoint_*/*Worksheet*.docx

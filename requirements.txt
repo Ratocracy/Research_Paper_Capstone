@@ -1,0 +1,11 @@
+# Runtime dependencies for checkpoint_8 and the checkpoint_4-7 implementation.
+# Versions taken from the working local environment; transitive dependencies
+# are resolved by pip. This is not a complete transitive lockfile.
+python-dotenv==1.2.3
+langchain-core==1.6.0
+langchain-openai==1.6.0
+langchain-chroma==1.1.0
+chromadb==1.5.9
+rank-bm25==0.2.2
+networkx==3.6.1
+pypdf==6.16.2
