@@ -86,6 +86,14 @@ The direct route reduces planning overhead; the agent can gather broader evidenc
 
 ## Evaluation and demonstration
 
+There are two ways to demonstrate the system. For live, reviewer-directed questions, run the interactive Q&A interface:
+
+```powershell
+.\.venv\Scripts\python.exe checkpoint_8/interactive_qa.py
+```
+
+This loads the corpus and retrieval index, then displays a `You:` prompt. Reviewers can enter their own questions, repeat a question to demonstrate the zero-call cache hit, use `/clear` to clear the session cache, and use `/quit` to exit. Interactive answers and measurements are printed to the terminal but are not saved automatically.
+
 Run the predefined production-readiness evaluation separately:
 
 ```powershell
